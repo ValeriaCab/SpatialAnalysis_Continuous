@@ -1,0 +1,726 @@
+// Initial random seed:
+2619257241557642605
+
+// RunInitializeCallbacks():
+initializeSLiMModelType(modelType = 'nonWF');
+initializeSLiMOptions(dimensionality = 'xy');
+initializeTreeSeq(checkCoalescence = T);
+initializeMutationType(1, 0.5, "f", 0);
+initializeMutationType(2, 0.5, "n", 0, 0.25);
+initializeMutationRate(1.2e-08);
+initializeGenomicElementType(1, c(m1, m2), c(0, 1));
+initializeGenomicElement(g1, 0, 24999);
+initializeGenomicElement(g1, 25000, 49999);
+initializeGenomicElement(g1, 50000, 74999);
+initializeGenomicElement(g1, 75000, 99999);
+initializeGenomicElement(g1, 100000, 124999);
+initializeGenomicElement(g1, 125000, 149999);
+initializeGenomicElement(g1, 150000, 174999);
+initializeGenomicElement(g1, 175000, 199999);
+initializeGenomicElement(g1, 200000, 224999);
+initializeGenomicElement(g1, 225000, 249999);
+initializeGenomicElement(g1, 250000, 274999);
+initializeGenomicElement(g1, 275000, 299999);
+initializeGenomicElement(g1, 300000, 324999);
+initializeGenomicElement(g1, 325000, 349999);
+initializeGenomicElement(g1, 350000, 374999);
+initializeGenomicElement(g1, 375000, 399999);
+initializeGenomicElement(g1, 400000, 424999);
+initializeGenomicElement(g1, 425000, 449999);
+initializeGenomicElement(g1, 450000, 474999);
+initializeGenomicElement(g1, 475000, 499999);
+initializeRecombinationRate(c(1e-08, 0.5, 1e-08, 0.5, 1e-08, 0.5, 1e-08, 0.5, 1e-08, 0.5, 1e-08, 0.5, 1e-08, 0.5, 1e-08, 0.5, 1e-08, 0.5, 1e-08, 0.5, 1e-08, 0.5, 1e-08, 0.5, 1e-08, 0.5, 1e-08, 0.5, 1e-08, 0.5, 1e-08, 0.5, 1e-08, 0.5, 1e-08, 0.5, 1e-08, 0.5, 1e-08, 0.5), c(24999, 25000, 49999, 50000, 74999, 75000, 99999, 100000, 124999, 125000, 149999, 150000, 174999, 175000, 199999, 200000, 224999, 225000, 249999, 250000, 274999, 275000, 299999, 300000, 324999, 325000, 349999, 350000, 374999, 375000, 399999, 400000, 424999, 425000, 449999, 450000, 474999, 475000, 499999, 500000));
+initializeInteractionType(1, "xy", reciprocal=T, maxDistance=0.9);
+initializeInteractionType(2, "xy", reciprocal=T, maxDistance=0.9);
+
+// Starting run at tick <start>:
+1 
+
+
+---START SIMULATION---
+
+Population size Generation 0: 1000
+
+2500: NO COALESCED
+
+REGIONES
+Region 1: [0.0,8.33233] → 441 individuals.
+Region: 1 → Sum of Freq * Mutation Efect: 0.0308408
+
+Region 2: [8.33333,16.6657] → 471 individuals.
+Region: 2 → Sum of Freq * Mutation Efect: -0.00160272
+
+Region 3: [16.6667,24.999] → 453 individuals.
+Region: 3 → Sum of Freq * Mutation Efect: 0.00284935
+
+
+Final population size: 1366
+
+Frequency Matrix of QTLs x Region
+             [,0]       [,1]       [,2]
+  [0,] 0.00113379        0.0        0.0
+  [1,]        0.0        0.0 0.00220751
+  [2,] 0.00680272        0.0        0.0
+  [3,]        0.0   0.014862        0.0
+  [4,]   0.129252 0.00849257        0.0
+  [5,]  0.0430839        0.0        0.0
+  [6,]        0.0        0.0 0.00331126
+  [7,]        0.0        0.0 0.00883002
+  [8,]        0.0        0.0  0.0220751
+  [9,]  0.0510204        0.0        0.0
+ [10,]    0.15873  0.0339703        0.0
+ [11,]        0.0 0.00212314        0.0
+ [12,]        0.0 0.00318471        0.0
+ [13,]  0.0306122 0.00318471        0.0
+ [14,]        0.0        0.0 0.00220751
+ [15,]        0.0  0.0106157        0.0
+ [16,]        0.0   0.044586 0.00883002
+ [17,]  0.0170068  0.0212314        0.0
+ [18,]  0.0181406        0.0        0.0
+ [19,]        0.0        0.0 0.00662252
+ [20,]        0.0  0.0350318   0.135762
+ [21,]        0.0        0.0  0.0121413
+ [22,]  0.0181406        0.0        0.0
+ [23,] 0.00113379        0.0        0.0
+ [24,] 0.00680272        0.0        0.0
+ [25,]        0.0 0.00318471  0.0154525
+ [26,]  0.0170068  0.0201699        0.0
+ [27,]        0.0        0.0 0.00883002
+ [28,]        0.0   0.007431        0.0
+ [29,]  0.0124717        0.0        0.0
+ [30,] 0.00113379        0.0        0.0
+ [31,]  0.0589569  0.0265393        0.0
+ [32,]        0.0 0.00212314        0.0
+ [33,] 0.00113379        0.0        0.0
+ [34,]        0.0 0.00530786        0.0
+ [35,]        0.0        0.0  0.0298013
+ [36,]        0.0        0.0  0.0220751
+ [37,]        0.0  0.0244161 0.00883002
+ [38,]        0.0  0.0254777   0.208609
+ [39,] 0.00113379        0.0        0.0
+ [40,]        0.0 0.00636943        0.0
+ [41,]  0.0272109        0.0        0.0
+ [42,] 0.00566893        0.0        0.0
+ [43,]   0.021542        0.0        0.0
+ [44,]        0.0        0.0  0.0165563
+ [45,] 0.00113379        0.0        0.0
+ [46,]        0.0  0.0159236        0.0
+ [47,]        0.0   0.174098        0.0
+ [48,]        0.0   0.022293 0.00110375
+ [49,] 0.00566893        0.0        0.0
+ [50,]  0.0578231        0.0        0.0
+ [51,]        0.0 0.00212314        0.0
+ [52,]        0.0  0.0233546  0.0562914
+ [53,]        0.0 0.00106157        0.0
+ [54,]        0.0 0.00106157        0.0
+ [55,] 0.00453515        0.0        0.0
+ [56,]        0.0        0.0  0.0673289
+ [57,]        0.0  0.0106157        0.0
+ [58,]   0.015873        0.0        0.0
+ [59,]        0.0 0.00106157  0.0960265
+ [60,]        0.0  0.0180467        0.0
+ [61,]  0.0283447        0.0        0.0
+ [62,]        0.0  0.0116773        0.0
+ [63,]  0.0657596  0.0116773        0.0
+ [64,]        0.0        0.0  0.0551876
+ [65,]  0.0170068  0.0201699        0.0
+ [66,]  0.0136054        0.0        0.0
+ [67,] 0.00566893        0.0        0.0
+ [68,]        0.0 0.00106157   0.013245
+ [69,]        0.0        0.0 0.00993377
+ [70,]        0.0   0.059448  0.0518764
+ [71,]        0.0 0.00424628        0.0
+ [72,]        0.0        0.0 0.00441501
+ [73,] 0.00226757        0.0        0.0
+ [74,]   0.114512        0.0        0.0
+ [75,] 0.00453515        0.0        0.0
+ [76,]        0.0  0.0116773        0.0
+ [77,]        0.0    0.16242        0.0
+ [78,]        0.0   0.007431        0.0
+ [79,] 0.00566893        0.0        0.0
+ [80,]        0.0 0.00424628        0.0
+ [81,]        0.0   0.007431        0.0
+ [82,]        0.0 0.00318471        0.0
+ [83,]  0.0623583 0.00530786        0.0
+ [84,] 0.00226757        0.0        0.0
+ [85,]        0.0        0.0 0.00331126
+ [86,]  0.0283447  0.0307856        0.0
+ [87,]        0.0        0.0 0.00220751
+ [88,] 0.00226757        0.0        0.0
+ [89,]  0.0238095        0.0        0.0
+ [90,]        0.0  0.0329087        0.0
+ [91,]        0.0        0.0 0.00110375
+ [92,]        0.0        0.0 0.00772627
+ [93,]        0.0        0.0 0.00110375
+ [94,] 0.00113379 0.00318471        0.0
+ [95,]        0.0 0.00318471        0.0
+ [96,]        0.0 0.00106157        0.0
+ [97,] 0.00226757        0.0        0.0
+ [98,] 0.00226757        0.0        0.0
+ [99,] 0.00113379        0.0        0.0
+[100,] 0.00566893        0.0        0.0
+[101,]        0.0 0.00106157        0.0
+[102,]        0.0 0.00212314        0.0
+[103,]        0.0        0.0 0.00110375
+[104,]        0.0        0.0 0.00110375
+[105,]        0.0 0.00106157        0.0
+[106,] 0.00226757        0.0        0.0
+
+COMPARISONS BETWEEN REGIONS
+QTL 0 Regions 1-2 → Num=-1.28839e-06 Den=0.00113379
+QTL 0 Regions 1-3 → Num=-1.28839e-06 Den=0.00113379
+QTL 0 Regions 2-3 → Num=0.0 Den=0.0
+
+
+QTL 1 Regions 1-2 → Num=0.0 Den=0.0
+QTL 1 Regions 1-3 → Num=8.47033e-22 Den=0.00220751
+QTL 1 Regions 2-3 → Num=8.47033e-22 Den=0.00220751
+
+
+QTL 2 Regions 1-2 → Num=3.09215e-05 Den=0.00680272
+QTL 2 Regions 1-3 → Num=3.09215e-05 Den=0.00680272
+QTL 2 Regions 2-3 → Num=0.0 Den=0.0
+
+
+QTL 3 Regions 1-2 → Num=0.000189728 Den=0.014862
+QTL 3 Regions 1-3 → Num=0.0 Den=0.0
+QTL 3 Regions 2-3 → Num=0.000189728 Den=0.014862
+
+
+QTL 4 Regions 1-2 → Num=0.0143091 Den=0.135549
+QTL 4 Regions 1-3 → Num=0.0164502 Den=0.129252
+QTL 4 Regions 2-3 → Num=5.42079e-05 Den=0.00849257
+
+
+QTL 5 Regions 1-2 → Num=0.00176252 Den=0.0430839
+QTL 5 Regions 1-3 → Num=0.00176252 Den=0.0430839
+QTL 5 Regions 2-3 → Num=0.0 Den=0.0
+
+
+QTL 6 Regions 1-2 → Num=0.0 Den=0.0
+QTL 6 Regions 1-3 → Num=3.6629e-06 Den=0.00331126
+QTL 6 Regions 2-3 → Num=3.6629e-06 Den=0.00331126
+
+
+QTL 7 Regions 1-2 → Num=0.0 Den=0.0
+QTL 7 Regions 1-3 → Num=5.86063e-05 Den=0.00883002
+QTL 7 Regions 2-3 → Num=5.86063e-05 Den=0.00883002
+
+
+QTL 8 Regions 1-2 → Num=0.0 Den=0.0
+QTL 8 Regions 1-3 → Num=0.000439548 Den=0.0220751
+QTL 8 Regions 2-3 → Num=0.000439548 Den=0.0220751
+
+
+QTL 9 Regions 1-2 → Num=0.00249304 Den=0.0510204
+QTL 9 Regions 1-3 → Num=0.00249304 Den=0.0510204
+QTL 9 Regions 2-3 → Num=0.0 Den=0.0
+
+
+QTL 10 Regions 1-2 → Num=0.0151917 Den=0.181916
+QTL 10 Regions 1-3 → Num=0.0248918 Den=0.15873
+QTL 10 Regions 2-3 → Num=0.00108416 Den=0.0339703
+
+
+QTL 11 Regions 1-2 → Num=0.0 Den=0.00212314
+QTL 11 Regions 1-3 → Num=0.0 Den=0.0
+QTL 11 Regions 2-3 → Num=0.0 Den=0.00212314
+
+
+QTL 12 Regions 1-2 → Num=3.38799e-06 Den=0.00318471
+QTL 12 Regions 1-3 → Num=0.0 Den=0.0
+QTL 12 Regions 2-3 → Num=3.38799e-06 Den=0.00318471
+
+
+QTL 13 Regions 1-2 → Num=0.000678072 Den=0.033602
+QTL 13 Regions 1-3 → Num=0.000869666 Den=0.0306122
+QTL 13 Regions 2-3 → Num=3.38799e-06 Den=0.00318471
+
+
+QTL 14 Regions 1-2 → Num=0.0 Den=0.0
+QTL 14 Regions 1-3 → Num=8.47033e-22 Den=0.00220751
+QTL 14 Regions 2-3 → Num=8.47033e-22 Den=0.00220751
+
+
+QTL 15 Regions 1-2 → Num=9.03465e-05 Den=0.0106157
+QTL 15 Regions 1-3 → Num=0.0 Den=0.0
+QTL 15 Regions 2-3 → Num=9.03465e-05 Den=0.0106157
+
+
+QTL 16 Regions 1-2 → Num=0.00189728 Den=0.044586
+QTL 16 Regions 1-3 → Num=5.86063e-05 Den=0.00883002
+QTL 16 Regions 2-3 → Num=0.00116849 Den=0.0526286
+
+
+QTL 17 Regions 1-2 → Num=-6.43612e-05 Den=0.0375161
+QTL 17 Regions 1-3 → Num=0.000251237 Den=0.0170068
+QTL 17 Regions 2-3 → Num=0.000406559 Den=0.0212314
+
+
+QTL 18 Regions 1-2 → Num=0.0002886 Den=0.0181406
+QTL 18 Regions 1-3 → Num=0.0002886 Den=0.0181406
+QTL 18 Regions 2-3 → Num=0.0 Den=0.0
+
+
+QTL 19 Regions 1-2 → Num=0.0 Den=0.0
+QTL 19 Regions 1-3 → Num=2.93032e-05 Den=0.00662252
+QTL 19 Regions 2-3 → Num=2.93032e-05 Den=0.00662252
+
+
+QTL 20 Regions 1-2 → Num=0.00115531 Den=0.0350318
+QTL 20 Regions 1-3 → Num=0.0181716 Den=0.135762
+QTL 20 Regions 2-3 → Num=0.00981498 Den=0.161281
+
+
+QTL 21 Regions 1-2 → Num=0.0 Den=0.0
+QTL 21 Regions 1-3 → Num=0.000120876 Den=0.0121413
+QTL 21 Regions 2-3 → Num=0.000120876 Den=0.0121413
+
+
+QTL 22 Regions 1-2 → Num=0.0002886 Den=0.0181406
+QTL 22 Regions 1-3 → Num=0.0002886 Den=0.0181406
+QTL 22 Regions 2-3 → Num=0.0 Den=0.0
+
+
+QTL 23 Regions 1-2 → Num=-1.28839e-06 Den=0.00113379
+QTL 23 Regions 1-3 → Num=-1.28839e-06 Den=0.00113379
+QTL 23 Regions 2-3 → Num=0.0 Den=0.0
+
+
+QTL 24 Regions 1-2 → Num=3.09215e-05 Den=0.00680272
+QTL 24 Regions 1-3 → Num=3.09215e-05 Den=0.00680272
+QTL 24 Regions 2-3 → Num=0.0 Den=0.0
+
+
+QTL 25 Regions 1-2 → Num=3.38799e-06 Den=0.00318471
+QTL 25 Regions 1-3 → Num=0.000205122 Den=0.0154525
+QTL 25 Regions 2-3 → Num=0.000110086 Den=0.0185388
+
+
+QTL 26 Regions 1-2 → Num=-7.00386e-05 Den=0.0364906
+QTL 26 Regions 1-3 → Num=0.000251237 Den=0.0170068
+QTL 26 Regions 2-3 → Num=0.000364774 Den=0.0201699
+
+
+QTL 27 Regions 1-2 → Num=0.0 Den=0.0
+QTL 27 Regions 1-3 → Num=5.86063e-05 Den=0.00883002
+QTL 27 Regions 2-3 → Num=5.86063e-05 Den=0.00883002
+
+
+QTL 28 Regions 1-2 → Num=3.95266e-05 Den=0.007431
+QTL 28 Regions 1-3 → Num=0.0 Den=0.0
+QTL 28 Regions 2-3 → Num=3.95266e-05 Den=0.007431
+
+
+QTL 29 Regions 1-2 → Num=0.000127551 Den=0.0124717
+QTL 29 Regions 1-3 → Num=0.000127551 Den=0.0124717
+QTL 29 Regions 2-3 → Num=0.0 Den=0.0
+
+
+QTL 30 Regions 1-2 → Num=-1.28839e-06 Den=0.00113379
+QTL 30 Regions 1-3 → Num=-1.28839e-06 Den=0.00113379
+QTL 30 Regions 2-3 → Num=0.0 Den=0.0
+
+
+QTL 31 Regions 1-2 → Num=0.000869842 Den=0.0823668
+QTL 31 Regions 1-3 → Num=0.00334982 Den=0.0589569
+QTL 31 Regions 2-3 → Num=0.000649365 Den=0.0265393
+
+
+QTL 32 Regions 1-2 → Num=0.0 Den=0.00212314
+QTL 32 Regions 1-3 → Num=0.0 Den=0.0
+QTL 32 Regions 2-3 → Num=0.0 Den=0.00212314
+
+
+QTL 33 Regions 1-2 → Num=-1.28839e-06 Den=0.00113379
+QTL 33 Regions 1-3 → Num=-1.28839e-06 Den=0.00113379
+QTL 33 Regions 2-3 → Num=0.0 Den=0.0
+
+
+QTL 34 Regions 1-2 → Num=1.694e-05 Den=0.00530786
+QTL 34 Regions 1-3 → Num=0.0 Den=0.0
+QTL 34 Regions 2-3 → Num=1.694e-05 Den=0.00530786
+
+
+QTL 35 Regions 1-2 → Num=0.0 Den=0.0
+QTL 35 Regions 1-3 → Num=0.000824152 Den=0.0298013
+QTL 35 Regions 2-3 → Num=0.000824152 Den=0.0298013
+
+
+QTL 36 Regions 1-2 → Num=0.0 Den=0.0
+QTL 36 Regions 1-3 → Num=0.000439548 Den=0.0220751
+QTL 36 Regions 2-3 → Num=0.000439548 Den=0.0220751
+
+
+QTL 37 Regions 1-2 → Num=0.000545467 Den=0.0244161
+QTL 37 Regions 1-3 → Num=5.86063e-05 Den=0.00883002
+QTL 37 Regions 2-3 → Num=0.000172883 Den=0.032815
+
+
+QTL 38 Regions 1-2 → Num=0.000596287 Den=0.0254777
+QTL 38 Regions 1-3 → Num=0.0431526 Den=0.208609
+QTL 38 Regions 2-3 → Num=0.0331191 Den=0.223457
+
+
+QTL 39 Regions 1-2 → Num=-1.28839e-06 Den=0.00113379
+QTL 39 Regions 1-3 → Num=-1.28839e-06 Den=0.00113379
+QTL 39 Regions 2-3 → Num=0.0 Den=0.0
+
+
+QTL 40 Regions 1-2 → Num=2.71039e-05 Den=0.00636943
+QTL 40 Regions 1-3 → Num=0.0 Den=0.0
+QTL 40 Regions 2-3 → Num=2.71039e-05 Den=0.00636943
+
+
+QTL 41 Regions 1-2 → Num=0.000680272 Den=0.0272109
+QTL 41 Regions 1-3 → Num=0.000680272 Den=0.0272109
+QTL 41 Regions 2-3 → Num=0.0 Den=0.0
+
+
+QTL 42 Regions 1-2 → Num=1.93259e-05 Den=0.00566893
+QTL 42 Regions 1-3 → Num=1.93259e-05 Den=0.00566893
+QTL 42 Regions 2-3 → Num=0.0 Den=0.0
+
+
+QTL 43 Regions 1-2 → Num=0.000416151 Den=0.021542
+QTL 43 Regions 1-3 → Num=0.000416151 Den=0.021542
+QTL 43 Regions 2-3 → Num=0.0 Den=0.0
+
+
+QTL 44 Regions 1-2 → Num=0.0 Den=0.0
+QTL 44 Regions 1-3 → Num=0.000238088 Den=0.0165563
+QTL 44 Regions 2-3 → Num=0.000238088 Den=0.0165563
+
+
+QTL 45 Regions 1-2 → Num=-1.28839e-06 Den=0.00113379
+QTL 45 Regions 1-3 → Num=-1.28839e-06 Den=0.00113379
+QTL 45 Regions 2-3 → Num=0.0 Den=0.0
+
+
+QTL 46 Regions 1-2 → Num=0.00022022 Den=0.0159236
+QTL 46 Regions 1-3 → Num=0.0 Den=0.0
+QTL 46 Regions 2-3 → Num=0.00022022 Den=0.0159236
+
+
+QTL 47 Regions 1-2 → Num=0.0300041 Den=0.174098
+QTL 47 Regions 1-3 → Num=0.0 Den=0.0
+QTL 47 Regions 2-3 → Num=0.0300041 Den=0.174098
+
+
+QTL 48 Regions 1-2 → Num=0.000450603 Den=0.022293
+QTL 48 Regions 1-3 → Num=-1.22097e-06 Den=0.00110375
+QTL 48 Regions 2-3 → Num=0.00040017 Den=0.0233475
+
+
+QTL 49 Regions 1-2 → Num=1.93259e-05 Den=0.00566893
+QTL 49 Regions 1-3 → Num=1.93259e-05 Den=0.00566893
+QTL 49 Regions 2-3 → Num=0.0 Den=0.0
+
+
+QTL 50 Regions 1-2 → Num=0.0032197 Den=0.0578231
+QTL 50 Regions 1-3 → Num=0.0032197 Den=0.0578231
+QTL 50 Regions 2-3 → Num=0.0 Den=0.0
+
+
+QTL 51 Regions 1-2 → Num=0.0 Den=0.00212314
+QTL 51 Regions 1-3 → Num=0.0 Den=0.0
+QTL 51 Regions 2-3 → Num=0.0 Den=0.00212314
+
+
+QTL 52 Regions 1-2 → Num=0.000496906 Den=0.0233546
+QTL 52 Regions 1-3 → Num=0.00305119 Den=0.0562914
+QTL 52 Regions 2-3 → Num=0.000918776 Den=0.0770166
+
+
+QTL 53 Regions 1-2 → Num=-1.12933e-06 Den=0.00106157
+QTL 53 Regions 1-3 → Num=0.0 Den=0.0
+QTL 53 Regions 2-3 → Num=-1.12933e-06 Den=0.00106157
+
+
+QTL 54 Regions 1-2 → Num=-1.12933e-06 Den=0.00106157
+QTL 54 Regions 1-3 → Num=0.0 Den=0.0
+QTL 54 Regions 2-3 → Num=-1.12933e-06 Den=0.00106157
+
+
+QTL 55 Regions 1-2 → Num=1.03072e-05 Den=0.00453515
+QTL 55 Regions 1-3 → Num=1.03072e-05 Den=0.00453515
+QTL 55 Regions 2-3 → Num=0.0 Den=0.0
+
+
+QTL 56 Regions 1-2 → Num=0.0 Den=0.0
+QTL 56 Regions 1-3 → Num=0.00439425 Den=0.0673289
+QTL 56 Regions 2-3 → Num=0.00439425 Den=0.0673289
+
+
+QTL 57 Regions 1-2 → Num=9.03465e-05 Den=0.0106157
+QTL 57 Regions 1-3 → Num=0.0 Den=0.0
+QTL 57 Regions 2-3 → Num=9.03465e-05 Den=0.0106157
+
+
+QTL 58 Regions 1-2 → Num=0.00021645 Den=0.015873
+QTL 58 Regions 1-3 → Num=0.00021645 Den=0.015873
+QTL 58 Regions 2-3 → Num=0.0 Den=0.0
+
+
+QTL 59 Regions 1-2 → Num=-1.12933e-06 Den=0.00106157
+QTL 59 Regions 1-3 → Num=0.00902904 Den=0.0960265
+QTL 59 Regions 2-3 → Num=0.00882403 Den=0.0968842
+
+
+QTL 60 Regions 1-2 → Num=0.000287979 Den=0.0180467
+QTL 60 Regions 1-3 → Num=0.0 Den=0.0
+QTL 60 Regions 2-3 → Num=0.000287979 Den=0.0180467
+
+
+QTL 61 Regions 1-2 → Num=0.000740827 Den=0.0283447
+QTL 61 Regions 1-3 → Num=0.000740827 Den=0.0283447
+QTL 61 Regions 2-3 → Num=0.0 Den=0.0
+
+
+QTL 62 Regions 1-2 → Num=0.000111804 Den=0.0116773
+QTL 62 Regions 1-3 → Num=0.0 Den=0.0
+QTL 62 Regions 2-3 → Num=0.000111804 Den=0.0116773
+
+
+QTL 63 Regions 1-2 → Num=0.00276072 Den=0.0759011
+QTL 63 Regions 1-3 → Num=0.0041847 Den=0.0657596
+QTL 63 Regions 2-3 → Num=0.000111804 Den=0.0116773
+
+
+QTL 64 Regions 1-2 → Num=0.0 Den=0.0
+QTL 64 Regions 1-3 → Num=0.00293032 Den=0.0551876
+QTL 64 Regions 2-3 → Num=0.00293032 Den=0.0551876
+
+
+QTL 65 Regions 1-2 → Num=-7.00386e-05 Den=0.0364906
+QTL 65 Regions 1-3 → Num=0.000251237 Den=0.0170068
+QTL 65 Regions 2-3 → Num=0.000364774 Den=0.0201699
+
+
+QTL 66 Regions 1-2 → Num=0.000154607 Den=0.0136054
+QTL 66 Regions 1-3 → Num=0.000154607 Den=0.0136054
+QTL 66 Regions 2-3 → Num=0.0 Den=0.0
+
+
+QTL 67 Regions 1-2 → Num=1.93259e-05 Den=0.00566893
+QTL 67 Regions 1-3 → Num=1.93259e-05 Den=0.00566893
+QTL 67 Regions 2-3 → Num=0.0 Den=0.0
+
+
+QTL 68 Regions 1-2 → Num=-1.12933e-06 Den=0.00106157
+QTL 68 Regions 1-3 → Num=0.000146516 Den=0.013245
+QTL 68 Regions 2-3 → Num=0.000117265 Den=0.0142785
+
+
+QTL 69 Regions 1-2 → Num=0.0 Den=0.0
+QTL 69 Regions 1-3 → Num=7.69208e-05 Den=0.00993377
+QTL 69 Regions 2-3 → Num=7.69208e-05 Den=0.00993377
+
+
+QTL 70 Regions 1-2 → Num=0.0034151 Den=0.059448
+QTL 70 Regions 1-3 → Num=0.00258234 Den=0.0518764
+QTL 70 Regions 2-3 → Num=-0.000170453 Den=0.105156
+
+
+QTL 71 Regions 1-2 → Num=9.03465e-06 Den=0.00424628
+QTL 71 Regions 1-3 → Num=0.0 Den=0.0
+QTL 71 Regions 2-3 → Num=9.03465e-06 Den=0.00424628
+
+
+QTL 72 Regions 1-2 → Num=0.0 Den=0.0
+QTL 72 Regions 1-3 → Num=9.76772e-06 Den=0.00441501
+QTL 72 Regions 2-3 → Num=9.76772e-06 Den=0.00441501
+
+
+QTL 73 Regions 1-2 → Num=8.47033e-22 Den=0.00226757
+QTL 73 Regions 1-3 → Num=8.47033e-22 Den=0.00226757
+QTL 73 Regions 2-3 → Num=0.0 Den=0.0
+
+
+QTL 74 Regions 1-2 → Num=0.0128827 Den=0.114512
+QTL 74 Regions 1-3 → Num=0.0128827 Den=0.114512
+QTL 74 Regions 2-3 → Num=0.0 Den=0.0
+
+
+QTL 75 Regions 1-2 → Num=1.03072e-05 Den=0.00453515
+QTL 75 Regions 1-3 → Num=1.03072e-05 Den=0.00453515
+QTL 75 Regions 2-3 → Num=0.0 Den=0.0
+
+
+QTL 76 Regions 1-2 → Num=0.000111804 Den=0.0116773
+QTL 76 Regions 1-3 → Num=0.0 Den=0.0
+QTL 76 Regions 2-3 → Num=0.000111804 Den=0.0116773
+
+
+QTL 77 Regions 1-2 → Num=0.0260909 Den=0.16242
+QTL 77 Regions 1-3 → Num=0.0 Den=0.0
+QTL 77 Regions 2-3 → Num=0.0260909 Den=0.16242
+
+
+QTL 78 Regions 1-2 → Num=3.95266e-05 Den=0.007431
+QTL 78 Regions 1-3 → Num=0.0 Den=0.0
+QTL 78 Regions 2-3 → Num=3.95266e-05 Den=0.007431
+
+
+QTL 79 Regions 1-2 → Num=1.93259e-05 Den=0.00566893
+QTL 79 Regions 1-3 → Num=1.93259e-05 Den=0.00566893
+QTL 79 Regions 2-3 → Num=0.0 Den=0.0
+
+
+QTL 80 Regions 1-2 → Num=9.03465e-06 Den=0.00424628
+QTL 80 Regions 1-3 → Num=0.0 Den=0.0
+QTL 80 Regions 2-3 → Num=9.03465e-06 Den=0.00424628
+
+
+QTL 81 Regions 1-2 → Num=3.95266e-05 Den=0.007431
+QTL 81 Regions 1-3 → Num=0.0 Den=0.0
+QTL 81 Regions 2-3 → Num=3.95266e-05 Den=0.007431
+
+
+QTL 82 Regions 1-2 → Num=3.38799e-06 Den=0.00318471
+QTL 82 Regions 1-3 → Num=0.0 Den=0.0
+QTL 82 Regions 2-3 → Num=3.38799e-06 Den=0.00318471
+
+
+QTL 83 Regions 1-2 → Num=0.00311063 Den=0.0670042
+QTL 83 Regions 1-3 → Num=0.00375567 Den=0.0623583
+QTL 83 Regions 2-3 → Num=1.694e-05 Den=0.00530786
+
+
+QTL 84 Regions 1-2 → Num=8.47033e-22 Den=0.00226757
+QTL 84 Regions 1-3 → Num=8.47033e-22 Den=0.00226757
+QTL 84 Regions 2-3 → Num=0.0 Den=0.0
+
+
+QTL 85 Regions 1-2 → Num=0.0 Den=0.0
+QTL 85 Regions 1-3 → Num=3.6629e-06 Den=0.00331126
+QTL 85 Regions 2-3 → Num=3.6629e-06 Den=0.00331126
+
+
+QTL 86 Regions 1-2 → Num=-0.000120121 Den=0.057385
+QTL 86 Regions 1-3 → Num=0.000740827 Den=0.0283447
+QTL 86 Regions 2-3 → Num=0.000884266 Den=0.0307856
+
+
+QTL 87 Regions 1-2 → Num=0.0 Den=0.0
+QTL 87 Regions 1-3 → Num=8.47033e-22 Den=0.00220751
+QTL 87 Regions 2-3 → Num=8.47033e-22 Den=0.00220751
+
+
+QTL 88 Regions 1-2 → Num=8.47033e-22 Den=0.00226757
+QTL 88 Regions 1-3 → Num=8.47033e-22 Den=0.00226757
+QTL 88 Regions 2-3 → Num=0.0 Den=0.0
+
+
+QTL 89 Regions 1-2 → Num=0.000514069 Den=0.0238095
+QTL 89 Regions 1-3 → Num=0.000514069 Den=0.0238095
+QTL 89 Regions 2-3 → Num=0.0 Den=0.0
+
+
+QTL 90 Regions 1-2 → Num=0.00101527 Den=0.0329087
+QTL 90 Regions 1-3 → Num=0.0 Den=0.0
+QTL 90 Regions 2-3 → Num=0.00101527 Den=0.0329087
+
+
+QTL 91 Regions 1-2 → Num=0.0 Den=0.0
+QTL 91 Regions 1-3 → Num=-1.22097e-06 Den=0.00110375
+QTL 91 Regions 2-3 → Num=-1.22097e-06 Den=0.00110375
+
+
+QTL 92 Regions 1-2 → Num=0.0 Den=0.0
+QTL 92 Regions 1-3 → Num=4.27338e-05 Den=0.00772627
+QTL 92 Regions 2-3 → Num=4.27338e-05 Den=0.00772627
+
+
+QTL 93 Regions 1-2 → Num=0.0 Den=0.0
+QTL 93 Regions 1-3 → Num=-1.22097e-06 Den=0.00110375
+QTL 93 Regions 2-3 → Num=-1.22097e-06 Den=0.00110375
+
+
+QTL 94 Regions 1-2 → Num=-5.12197e-06 Den=0.00431128
+QTL 94 Regions 1-3 → Num=-1.28839e-06 Den=0.00113379
+QTL 94 Regions 2-3 → Num=3.38799e-06 Den=0.00318471
+
+
+QTL 95 Regions 1-2 → Num=3.38799e-06 Den=0.00318471
+QTL 95 Regions 1-3 → Num=0.0 Den=0.0
+QTL 95 Regions 2-3 → Num=3.38799e-06 Den=0.00318471
+
+
+QTL 96 Regions 1-2 → Num=-1.12933e-06 Den=0.00106157
+QTL 96 Regions 1-3 → Num=0.0 Den=0.0
+QTL 96 Regions 2-3 → Num=-1.12933e-06 Den=0.00106157
+
+
+QTL 97 Regions 1-2 → Num=8.47033e-22 Den=0.00226757
+QTL 97 Regions 1-3 → Num=8.47033e-22 Den=0.00226757
+QTL 97 Regions 2-3 → Num=0.0 Den=0.0
+
+
+QTL 98 Regions 1-2 → Num=8.47033e-22 Den=0.00226757
+QTL 98 Regions 1-3 → Num=8.47033e-22 Den=0.00226757
+QTL 98 Regions 2-3 → Num=0.0 Den=0.0
+
+
+QTL 99 Regions 1-2 → Num=-1.28839e-06 Den=0.00113379
+QTL 99 Regions 1-3 → Num=-1.28839e-06 Den=0.00113379
+QTL 99 Regions 2-3 → Num=0.0 Den=0.0
+
+
+QTL 100 Regions 1-2 → Num=1.93259e-05 Den=0.00566893
+QTL 100 Regions 1-3 → Num=1.93259e-05 Den=0.00566893
+QTL 100 Regions 2-3 → Num=0.0 Den=0.0
+
+
+QTL 101 Regions 1-2 → Num=-1.12933e-06 Den=0.00106157
+QTL 101 Regions 1-3 → Num=0.0 Den=0.0
+QTL 101 Regions 2-3 → Num=-1.12933e-06 Den=0.00106157
+
+
+QTL 102 Regions 1-2 → Num=0.0 Den=0.00212314
+QTL 102 Regions 1-3 → Num=0.0 Den=0.0
+QTL 102 Regions 2-3 → Num=0.0 Den=0.00212314
+
+
+QTL 103 Regions 1-2 → Num=0.0 Den=0.0
+QTL 103 Regions 1-3 → Num=-1.22097e-06 Den=0.00110375
+QTL 103 Regions 2-3 → Num=-1.22097e-06 Den=0.00110375
+
+
+QTL 104 Regions 1-2 → Num=0.0 Den=0.0
+QTL 104 Regions 1-3 → Num=-1.22097e-06 Den=0.00110375
+QTL 104 Regions 2-3 → Num=-1.22097e-06 Den=0.00110375
+
+
+QTL 105 Regions 1-2 → Num=-1.12933e-06 Den=0.00106157
+QTL 105 Regions 1-3 → Num=0.0 Den=0.0
+QTL 105 Regions 2-3 → Num=-1.12933e-06 Den=0.00106157
+
+
+QTL 106 Regions 1-2 → Num=8.47033e-22 Den=0.00226757
+QTL 106 Regions 1-3 → Num=8.47033e-22 Den=0.00226757
+QTL 106 Regions 2-3 → Num=0.0 Den=0.0
+
+
+
+End comparison
+
+SUM OF ALL REGION PAIRS
+
+Regions 1–2
+  Sum of numerators = 0.127501
+  Sum of denominators = 2.03525
+ Hudson Fst  = 0.0626465
+
+Regions 1–3
+  Sum of numerators = 0.16507
+  Sum of denominators = 1.98952
+ Hudson Fst  = 0.0829697
+
+Regions 2–3
+  Sum of numerators = 0.126482
+  Sum of denominators = 1.80796
+ Hudson Fst  = 0.0699582
+
+
+FINISH
