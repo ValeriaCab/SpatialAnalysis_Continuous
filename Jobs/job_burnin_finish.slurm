@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=Burnin_coales
 #SBATCH --cpus-per-task=10
-#SBATCH --array=1-5    # <-- aquí defines cuántas corridas (1 a n)
+#SBATCH --array=6-50    # <-- aquí defines cuántas corridas (1 a n)
 #SBATCH --chdir=/mnt/data/dortega/vcabrera/scripts/
 #SBATCH --output=/mnt/data/dortega/vcabrera/output/logs_out/BLS.%A_%a.out
 #SBATCH --error=/mnt/data/dortega/vcabrera/output/logs_err/BLS.%A_%a.err
