@@ -1,3 +1,4 @@
+## Experimento
 library(ggplot2)
 library(dplyr)
 
@@ -7,7 +8,7 @@ base_path <- "/mnt/data/dortega/vcabrera/output/Freq_vs_MutEffect"
 # Buscar solo archivos numerados
 archivos <- list.files(
   path = base_path,
-  pattern = "^Freq_vs_MutEffect\\.[0-9]+\\.csv$",
+  pattern = "^Freq_vs_MutEffect\\.[301-303]+\\.csv$",
   full.names = TRUE
 )
 
@@ -17,10 +18,10 @@ archivos <- archivos[
 ]
 
 # Crear carpeta de salida
-dir.create(file.path(base_path, "plots"), showWarnings = FALSE)
+dir.create(file.path(base_path, "plots_exp"), showWarnings = FALSE)
 
 # Abrir PDF
-pdf(file.path(base_path, "plots/Freq_vs_MutEffect_all.pdf"), width = 8, height = 6)
+pdf(file.path(base_path, "plots_exp/Freq_vs_MutEffect_experiment.pdf"), width = 8, height = 6)
 
 for (archivo in archivos) {
 
