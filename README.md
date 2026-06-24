@@ -5,8 +5,8 @@ La relación entre la intensidad de la selección direccional y el fenotipo de l
 Sin embargo, la mayoría de los modelos teóricos no toman en cuenta el contexto geográfico, que también incide sobre los patrones de variación genética y fenotípica. Es necesario considerar la posición geográfica de los individuos al estudiar la selección direccional para comprender la dinámica de este proceso en modelos espaciales con entornos cambiantes y heterogéneos. En este estudio realizamos simulaciones para analizar cómo los factores ambientales que varían en el espacio y la selección direccional pueden influir en los valores fenotípicos y en variantes genéticas que afectan a un fenotipo concreto. Esperamos establecer reglas generales sobre cómo el flujo genético, los factores ambientales cambiantes y la intensidad de la selección direccional determinan la evolución de los fenotipos y las variantes genéticas que inciden en los rasgos complejos.
 
 ## Descripción
-Este repositorio contiene los scripts y análisis utilizados para estudiar el impacto de la selección natural en patrones de diversidad genética y fenotípica en un espacio continuo. 
+Este repositorio contiene los scripts y análisis utilizados para estudiar el impacto de la selección natural sobre los patrones de diversidad genética y fenotípica en poblaciones distribuidas en un espacio continuo mediante simulaciones *forward-time* implementadas en SLiM.
 
-la adaptación local en poblaciones distribuidas espacialmente mediante simulaciones forward-time en SLiM.
+Se evaluó la respuesta adaptativa de rasgos cuantitativos bajo dos escenarios ambientales, uno homogéneo y otro heterogéneo. En cada escenario se analizaron bajo dos tipos de selección natural (reportados en la literatura como aquellos que actúan en rasgos complejos), estabilizadora y direccional, examinando la distribución de efectos mutacionales, los fenotipos, la aptitud individual y los patrones espaciales de adaptación local.
 
-Se evaluó la respuesta adaptativa de rasgos cuantitativos bajo distintos escenarios ambientales, analizando la distribución de efectos mutacionales, fenotipos, aptitud y patrones espaciales de adaptación.
+<img width="270" height="268" alt="Captura desde 2025-09-11 00-59-17" src="https://github.com/user-attachments/assets/43c2dd22-6c25-4f89-8231-d1e5621dc5c1" />
