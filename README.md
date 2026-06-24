@@ -9,4 +9,17 @@ Este repositorio contiene los scripts y análisis utilizados para estudiar el im
 
 Se evaluó la respuesta adaptativa de rasgos cuantitativos bajo dos escenarios ambientales, uno homogéneo y otro heterogéneo. En cada escenario se analizaron bajo dos tipos de selección natural (reportados en la literatura como aquellos que actúan en rasgos complejos), estabilizadora y direccional, examinando la distribución de efectos mutacionales, los fenotipos, la aptitud individual y los patrones espaciales de adaptación local.
 
-<img width="270" height="268" alt="Captura desde 2025-09-11 00-59-17" src="https://github.com/user-attachments/assets/43c2dd22-6c25-4f89-8231-d1e5621dc5c1" />
+<table>
+<tr>
+<td align="center">
+<img width="270" alt="Ambiente homogéneo" src="https://github.com/user-attachments/assets/43c2dd22-6c25-4f89-8231-d1e5621dc5c1" /><br>
+<b>Ambiente homogéneo</b>
+</td>
+
+<td align="center">
+<img width="270" alt="Ambiente heterogéneo" src="https://github.com/user-attachments/assets/5da221b6-55d6-4687-9e95-842a595de86b" /><br>
+<b>Ambiente heterogéneo</b>
+</td>
+</tr>
+</table>
+
