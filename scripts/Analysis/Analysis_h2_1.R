@@ -16,7 +16,7 @@ message("Procesando directorio base: ", base_path)
 
 # 2. Detectar carpetas numéricas (1, 2, ..., N)
 carpetas <- list.dirs(base_path, recursive = FALSE, full.names = TRUE)
-carpetas_numericas <- carpetas[grepl("/[0-9]+$", carpetas)]
+carpetas_numericas <- carpetas[grepl("/[1-9]+$", carpetas)]
 
 # Ordenar numéricamente (1, 2, 3...)
 ids <- as.numeric(basename(carpetas_numericas))

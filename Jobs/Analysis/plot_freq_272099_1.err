@@ -9,7 +9,11 @@ The following objects are masked from ‘package:base’:
 
     intersect, setdiff, setequal, union
 
-Procesando directorio base: 
-Carpetas encontradas: 0
+Procesando directorio base: /mnt/data/dortega/vcabrera/output/1_Homogeneo_output/h2_1/
+Carpetas encontradas: 1
+
+----------------------------------------
+Procesando Carpeta 1...
+PDF guardado en: /mnt/data/dortega/vcabrera/output/1_Homogeneo_output/h2_1//1/Analysis_1.pdf
 
 ¡Analisis completado exitosamente para todas las carpetas!
