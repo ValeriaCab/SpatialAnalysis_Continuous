@@ -5,8 +5,8 @@
 #SBATCH --time=01:00:00
 #SBATCH --mem=4G
 
-module load R
+module load r/4.4.1
 
-Rscript /mnt/data/dortega/vcabrera/scripts/PLOT_Freq_vs_MutEffect.R
+Rscript /mnt/data/dortega/vcabrera/scripts/Analysis/PLOT_Freq_vs_MutEffect_Exp.R
 
 

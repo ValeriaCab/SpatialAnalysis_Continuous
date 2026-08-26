@@ -1,0 +1,27 @@
+#!/bin/bash
+#SBATCH --job-name=Heterogeneo
+#SBATCH --cpus-per-task=10
+#SBATCH --array=12  # <-- aquí defines cuántas corridas (1 a n)
+#SBATCH --chdir=/mnt/data/dortega/vcabrera/scripts/2_Heterogeneo/
+#SBATCH --output=/mnt/data/dortega/vcabrera/output/2_Heterogeneo_output/logs_out/BLS.%A_%a.out
+#SBATCH --error=/mnt/data/dortega/vcabrera/output/2_Heterogeneo_output/logs_err/BLS.%A_%a.err
+#SBATCH --time=100:00:00
+#SBATCH --mem=4G
+
+# Cargar módulos
+. /etc/profile.d/modules.sh
+module load slim/4.3
+
+# Definir RUNID = número de réplica (SLURM_ARRAY_TASK_ID)
+RUNID=${SLURM_ARRAY_TASK_ID}
+
+# Crear carpeta específica por RUNID
+RUNDIR=/mnt/data/dortega/vcabrera/output/2_Heterogeneo_output/${RUNID}
+mkdir -p "$RUNDIR"
+
+echo "Ejecutando RUNID=$RUNID en carpeta $RUNDIR"
+
+# Ejecutar SLiM y guardar salida dentro de la carpeta
+slim -d RUNID=${RUNID} -d RUNDIR="\"$RUNDIR\"" Heterogeneo.slim \
+    > "$RUNDIR/slim_output.txt" \
+    2> "$RUNDIR/slim_error.txt"
