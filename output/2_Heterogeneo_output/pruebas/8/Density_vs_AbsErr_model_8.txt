@@ -1,0 +1,19 @@
+
+Call:
+lm(formula = AbsErr ~ density, data = datos)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.23283 -0.14349 -0.03990  0.09529  1.30351 
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)    
+(Intercept) 0.2312663  0.0089097  25.957   <2e-16 ***
+density     0.0001175  0.0007771   0.151     0.88    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.188 on 5304 degrees of freedom
+Multiple R-squared:  4.314e-06,	Adjusted R-squared:  -0.0001842 
+F-statistic: 0.02288 on 1 and 5304 DF,  p-value: 0.8798
+
