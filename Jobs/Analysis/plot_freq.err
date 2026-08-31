@@ -1,3 +1,4 @@
+/var/spool/slurm/job276521/slurm_script: line 15: cd: /mnt/data/dortega/vcabrera/output/2_Heterogeneo_output/h2_1/1: No such file or directory
 
 Attaching package: ‘dplyr’
 
@@ -9,7 +10,21 @@ The following objects are masked from ‘package:base’:
 
     intersect, setdiff, setequal, union
 
-Procesando directorio base: 
-Carpetas encontradas: 0
+
+Attaching package: ‘gridExtra’
+
+The following object is masked from ‘package:dplyr’:
+
+    combine
+
+Procesando directorio base: /mnt/data/dortega/vcabrera/output/2_Heterogeneo_output/h2_1
+Carpetas encontradas: 1
+
+----------------------------------------
+Procesando Carpeta 2...
+Resultados Z3 calculados correctamente.
+resultados Z en 5 regiones calculados correctamente.
+resultados Z en 10 regiones calculados correctamente.
+PDF guardado en: /mnt/data/dortega/vcabrera/output/2_Heterogeneo_output/h2_1/2/Analysis_2.pdf
 
 ¡Analisis completado exitosamente para todas las carpetas!
