@@ -1,12 +1,12 @@
 #!/bin/bash
-#SBATCH --job-name=Heterogeneo
-#SBATCH --cpus-per-task=10
-#SBATCH --array=1  # <-- aquí defines cuántas corridas (1 a n)
+#SBATCH --job-name=Het_05
+#SBATCH --cpus-per-task=1
+#SBATCH --array=1-50%10
 #SBATCH --chdir=/mnt/data/dortega/vcabrera/scripts/2_Heterogeneo
 #SBATCH --output=/mnt/data/dortega/vcabrera/output/2_Heterogeneo_output/logs_out/BLS.%A_%a.out
 #SBATCH --error=/mnt/data/dortega/vcabrera/output/2_Heterogeneo_output/logs_err/BLS.%A_%a.err
 #SBATCH --time=100:00:00
-#SBATCH --mem=4G
+#SBATCH --mem=8G
 
 # Cargar módulos
 . /etc/profile.d/modules.sh
@@ -16,7 +16,7 @@ module load slim/4.3
 RUNID=${SLURM_ARRAY_TASK_ID}
 
 # Crear carpeta específica por RUNID
-RUNDIR=/mnt/data/dortega/vcabrera/output/2_Heterogeneo_output/${RUNID}
+RUNDIR=/mnt/data/dortega/vcabrera/output/2_Heterogeneo_output/h2_05/${RUNID}
 mkdir -p "$RUNDIR"
 
 echo "Ejecutando RUNID=$RUNID en carpeta $RUNDIR"

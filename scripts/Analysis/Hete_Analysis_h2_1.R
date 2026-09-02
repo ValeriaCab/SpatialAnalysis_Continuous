@@ -1,4 +1,4 @@
-# Analysis h2 = 0.5
+# Analysis h2 = 1
 
 library(dplyr)
 library(ggplot2)
@@ -96,7 +96,7 @@ for (dir in carpetas_numericas) {
   points(
     datos_plot3$Opt[datos_plot3$Region == 1],
     datos_plot3$Phen[datos_plot3$Region == 1],
-    col = "red", pch = 19
+    col = "yellow", pch = 19
   )
   points(
     datos_plot3$Opt[datos_plot3$Region == 2],
@@ -106,7 +106,7 @@ for (dir in carpetas_numericas) {
   points(
     datos_plot3$Opt[datos_plot3$Region == 3],
     datos_plot3$Phen[datos_plot3$Region == 3],
-    col = "yellow", pch = 19
+    col = "red", pch = 19
   )
 
   mean1 <- sprintf("%.3f", mean(datos_plot3$Phen[datos_plot3$Region == 1], na.rm = TRUE))
@@ -120,7 +120,7 @@ for (dir in carpetas_numericas) {
       paste("Region 2 (Mean:", mean2, ")"),
       paste("Region 3 (Mean:", mean3, ")")
     ),
-    col = c("red", "orange", "yellow"),
+    col = c("yellow", "orange", "red"),
     pch = 19
   )
 
@@ -143,7 +143,7 @@ for (dir in carpetas_numericas) {
 
   # Graficar todos los puntos superpuestos asignando el color según la Región (1 a 5)
 # Genera 5 colores repartidos desde el rojo pasando por el naranja hasta el amarillo
-col_gradiente <- colorRampPalette(c("red3", "orange", "yellow"))(5)
+col_gradiente <- colorRampPalette(c("yellow", "orange", "red3"))(5)
 
 points(
   datos_plot5$Opt,
@@ -189,7 +189,7 @@ points(
   )
   abline(a = 0, b = 1, lty = 2)
 
- col_gradiente <- colorRampPalette(c("red3", "orange", "yellow"))(10)
+ col_gradiente <- colorRampPalette(c("yellow", "orange", "red3"))(10)
 
 points(
   datos_plot5$Opt,
@@ -238,7 +238,7 @@ points(
   p_box <- ggplot(datos_plot3, aes(x = factor(Region), y = Phen, fill = factor(Region))) +
     geom_boxplot(color = "black") +
     scale_fill_manual(
-      values = c("1" = "red", "2" = "orange", "3" = "yellow")
+      values = c("1" = "yellow", "2" = "orange", "3" = "red")
     ) +
     labs(
       title = paste0("Average phenotypic value by region (Replica ", num, ")"),
@@ -261,7 +261,7 @@ points(
 
   p_box <- ggplot(datos_plot5, aes(x = factor(Region), y = Phen, fill = factor(Region))) +
     geom_boxplot(color = "black") +
-    scale_fill_manual(values = colorRampPalette(c("red", "orange", "yellow"))(5)) +
+    scale_fill_manual(values = colorRampPalette(c("yellow", "orange", "red"))(5)) +
     labs(
       title = paste0("Average phenotypic value by region (Replica ", num, ")"),
       x = "Region",
@@ -282,7 +282,7 @@ points(
   
   p_box <- ggplot(datos_plot10, aes(x = factor(Region), y = Phen, fill = factor(Region))) +
     geom_boxplot(color = "black") +
-        scale_fill_manual(values = colorRampPalette(c("red", "orange", "yellow"))(10)) +
+        scale_fill_manual(values = colorRampPalette(c("yellow", "orange", "red"))(10)) +
     labs(
       title = paste0("Average phenotypic value by region (Replica ", num, ")"),
       x = "Region",

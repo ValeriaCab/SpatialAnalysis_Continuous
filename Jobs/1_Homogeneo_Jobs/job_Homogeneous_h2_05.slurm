@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=Homogeneo
 #SBATCH --cpus-per-task=10
-#SBATCH --array=2   # <-- aquí defines cuántas corridas (1 a n)
+#SBATCH --array=1-50   # <-- aquí defines cuántas corridas (1 a n)
 #SBATCH --chdir=/mnt/data/dortega/vcabrera/scripts/1_Homogeneo/
 #SBATCH --output=/mnt/data/dortega/vcabrera/output/1_Homogeneo_output/logs_out/BLS.%A_%a.out
 #SBATCH --error=/mnt/data/dortega/vcabrera/output/1_Homogeneo_output/logs_err/BLS.%A_%a.err
@@ -16,7 +16,7 @@ module load slim/4.3
 RUNID=${SLURM_ARRAY_TASK_ID}
 
 # Crear carpeta específica por RUNID
-RUNDIR=/mnt/data/dortega/vcabrera/output/1_Homogeneo_output/${RUNID}
+RUNDIR=/mnt/data/dortega/vcabrera/output/1_Homogeneo_output/h2_05/${RUNID}
 mkdir -p "$RUNDIR"
 
 echo "Ejecutando RUNID=$RUNID en carpeta $RUNDIR"

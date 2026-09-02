@@ -29,7 +29,7 @@ initialize() {
     defineConstant("REGIONS_SET", c(3, 5, 10));
     defineGlobal("new_environment", 0);
     defineGlobal("flag_coalesc", 0);
-    defineConstant("FINISH", 250000); //Total generations 250,000
+    defineConstant("FINISH", 300000); //Total generations 250,000
 
     // Set up constants that depend on externally defined parameters
     defineConstant("FECUN", 1/LIFETIME ); // defineConstant("FECUN", 1 / LIFETIME);
@@ -97,15 +97,16 @@ catn("\nPopulation size Generation 0: " + p1.individualCount + "\n");
 
 first() {
 
-    if (sim.treeSeqCoalesced()){
-        if (!exists("mapValuesHetero")){
-            mapValuesHetero = matrix(c(1, 1, 0.0, 0.0), ncol=2);
-            p1.defineSpatialMap("MAP", "xy", mapValuesHetero, interpolate=T,
-            valueRange=c(0.0, 1.0), colors=c("yellow", "red"));
-            print("Ya cambió de ambiente");
+    if (sim.cycle >= 200000){
+        if (sim.treeSeqCoalesced()){
+             if (!exists("mapValuesHetero")){
+                 mapValuesHetero = matrix(c(0, 0, 1, 1), ncol=2);
+                 p1.defineSpatialMap("MAP", "xy", mapValuesHetero, interpolate=T,
+                 valueRange=c(0.0, 1.0), colors=c("yellow", "red"));
+                 print("Ya cambió de ambiente");
+             }
         }
     }
-
     // adult movement (reflecting boundaries, Gaussian kernel with sigma_V)
 	if (SV > 0) {
 		p1.deviatePositions(p1.individuals, "reflecting", INF, "n", SV);

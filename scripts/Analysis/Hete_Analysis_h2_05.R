@@ -96,7 +96,7 @@ for (dir in carpetas_numericas) {
   points(
     datos_plot3$Opt[datos_plot3$Region == 1],
     datos_plot3$Phen[datos_plot3$Region == 1],
-    col = "red", pch = 19
+    col = "yellow", pch = 19
   )
   points(
     datos_plot3$Opt[datos_plot3$Region == 2],
@@ -106,7 +106,7 @@ for (dir in carpetas_numericas) {
   points(
     datos_plot3$Opt[datos_plot3$Region == 3],
     datos_plot3$Phen[datos_plot3$Region == 3],
-    col = "yellow", pch = 19
+    col = "red", pch = 19
   )
 
   mean1 <- sprintf("%.3f", mean(datos_plot3$Phen[datos_plot3$Region == 1], na.rm = TRUE))
@@ -120,7 +120,7 @@ for (dir in carpetas_numericas) {
       paste("Region 2 (Mean:", mean2, ")"),
       paste("Region 3 (Mean:", mean3, ")")
     ),
-    col = c("red", "orange", "yellow"),
+    col = c("yellow", "orange", "red"),
     pch = 19
   )
 
@@ -143,7 +143,7 @@ for (dir in carpetas_numericas) {
 
   # Graficar todos los puntos superpuestos asignando el color según la Región (1 a 5)
 # Genera 5 colores repartidos desde el rojo pasando por el naranja hasta el amarillo
-col_gradiente <- colorRampPalette(c("red3", "orange", "yellow"))(5)
+col_gradiente <- colorRampPalette(c("yellow", "orange", "red3"))(5)
 
 points(
   datos_plot5$Opt,
@@ -189,7 +189,7 @@ points(
   )
   abline(a = 0, b = 1, lty = 2)
 
- col_gradiente <- colorRampPalette(c("red3", "orange", "yellow"))(10)
+ col_gradiente <- colorRampPalette(c("yellow", "orange", "red3"))(10)
 
 points(
   datos_plot5$Opt,

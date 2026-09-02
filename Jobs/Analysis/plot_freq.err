@@ -1,0 +1,29 @@
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+Attaching package: ‘gridExtra’
+
+The following object is masked from ‘package:dplyr’:
+
+    combine
+
+Procesando directorio base: /mnt/data/dortega/vcabrera/output/2_Heterogeneo_output/h2_05
+Carpetas encontradas: 1
+
+----------------------------------------
+Procesando Carpeta 1...
+Resultados Z3 calculados correctamente.
+resultados Z en 5 regiones calculados correctamente.
+resultados Z en 10 regiones calculados correctamente.
+PDF guardado en: /mnt/data/dortega/vcabrera/output/2_Heterogeneo_output/h2_05/1/Analysis_1.pdf
+
+¡Analisis completado exitosamente para todas las carpetas!

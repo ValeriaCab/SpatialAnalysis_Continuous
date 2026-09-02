@@ -1,0 +1,43 @@
+// Initial random seed:
+633616110219182496
+
+// RunInitializeCallbacks():
+initializeSLiMModelType(modelType = 'nonWF');
+initializeSLiMOptions(dimensionality = 'xy');
+initializeTreeSeq(checkCoalescence = T);
+initializeMutationType(1, 0.5, "f", 0);
+initializeMutationType(2, 0.5, "n", 0, 0.25);
+initializeMutationRate(1.2e-08);
+initializeGenomicElementType(1, c(m1, m2), c(0, 1));
+initializeGenomicElement(g1, 0, 24999);
+initializeGenomicElement(g1, 25000, 49999);
+initializeGenomicElement(g1, 50000, 74999);
+initializeGenomicElement(g1, 75000, 99999);
+initializeGenomicElement(g1, 100000, 124999);
+initializeGenomicElement(g1, 125000, 149999);
+initializeGenomicElement(g1, 150000, 174999);
+initializeGenomicElement(g1, 175000, 199999);
+initializeGenomicElement(g1, 200000, 224999);
+initializeGenomicElement(g1, 225000, 249999);
+initializeGenomicElement(g1, 250000, 274999);
+initializeGenomicElement(g1, 275000, 299999);
+initializeGenomicElement(g1, 300000, 324999);
+initializeGenomicElement(g1, 325000, 349999);
+initializeGenomicElement(g1, 350000, 374999);
+initializeGenomicElement(g1, 375000, 399999);
+initializeGenomicElement(g1, 400000, 424999);
+initializeGenomicElement(g1, 425000, 449999);
+initializeGenomicElement(g1, 450000, 474999);
+initializeGenomicElement(g1, 475000, 499999);
+initializeRecombinationRate(c(1e-08, 0.5, 1e-08, 0.5, 1e-08, 0.5, 1e-08, 0.5, 1e-08, 0.5, 1e-08, 0.5, 1e-08, 0.5, 1e-08, 0.5, 1e-08, 0.5, 1e-08, 0.5, 1e-08, 0.5, 1e-08, 0.5, 1e-08, 0.5, 1e-08, 0.5, 1e-08, 0.5, 1e-08, 0.5, 1e-08, 0.5, 1e-08, 0.5, 1e-08, 0.5, 1e-08, 0.5), c(24999, 25000, 49999, 50000, 74999, 75000, 99999, 100000, 124999, 125000, 149999, 150000, 174999, 175000, 199999, 200000, 224999, 225000, 249999, 250000, 274999, 275000, 299999, 300000, 324999, 325000, 349999, 350000, 374999, 375000, 399999, 400000, 424999, 425000, 449999, 450000, 474999, 475000, 499999, 500000));
+initializeInteractionType(1, "xy", reciprocal=T, maxDistance=0.9);
+initializeInteractionType(2, "xy", reciprocal=T, maxDistance=0.9);
+
+// Starting run at tick <start>:
+1 
+
+
+---START SIMULATION---
+
+Population size Generation 0: 3125
+
