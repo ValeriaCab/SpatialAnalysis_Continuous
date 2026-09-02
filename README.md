@@ -12,14 +12,13 @@ To evaluate the adaptive response of quantitative traits, two environmental scen
 <table>
 <tr>
 <td align="center">
-<img width="270" alt="Ambiente homogéneo" src="https://github.com/user-attachments/assets/43c2dd22-6c25-4f89-8231-d1e5621dc5c1" /><br>
+<img width="270" alt="Ambiente homogéneo" src="https://github.com/user-attachments/assets/ef8c0b45-98cf-4be7-8a50-336d712764e9" /><br>
 <b>Ambiente homogéneo</b>
 </td>
 
 <td align="center">
-<img width="270" alt="Ambiente heterogéneo" src="https://github.com/user-attachments/assets/5da221b6-55d6-4687-9e95-842a595de86b" /><br>
+<img width="270" alt="Ambiente heterogéneo" src="https://github.com/user-attachments/assets/286f2cf4-1d38-4bf0-8cb7-ef0b26cd8b6d" /><br>
 <b>Ambiente heterogéneo</b>
 </td>
 </tr>
 </table>
-
